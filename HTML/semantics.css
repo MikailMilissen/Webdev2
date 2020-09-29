@@ -1,0 +1,52 @@
+body{
+    font-family: 'Deco';
+}
+
+@font-face {
+    font-family: "Deco";
+    src: url("Market_Deco.ttf") format("opentype");
+}
+
+header{
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    padding: 1rem;
+    margin-left: 2rem;
+
+}
+
+header p{
+    font-size: 30px;
+    color: white;
+}
+nav{
+    background-color: cornsilk;
+    padding: 1rem;
+}
+
+nav ul{
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+p {
+    column-count: 2
+;
+}
+
+section{
+    padding-left: 2rem;
+    padding-right: 30rem;
+    display: flex;
+}
+
+footer{
+    display: flex;
+    padding: 1rem;
+}
+
