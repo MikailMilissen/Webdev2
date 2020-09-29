@@ -8,12 +8,18 @@ body{
 }
 
 header{
-    box-sizing: border-box;
     background-color: black;
     display: flex;
     padding: 1rem;
 
 }
+
+.Titel{
+    color: blue;
+    border: 2px;
+    background:rgba(0, 128, 0, 0.1); /* achtegrondkleur me opacity */
+}
+
 
 header p{
     font-size: 30px;
@@ -49,3 +55,9 @@ footer{
     padding: 1rem;
 }
 
+aside {
+    float: right;
+    background: red;
+    align-items: right;
+    margin-right: 0;
+}

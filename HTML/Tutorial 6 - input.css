@@ -21,3 +21,9 @@ footer{
 #video{
     margin-left: 50rem;
 }
+
+body{
+    background-image: url(cloud.jpg);
+    background-repeat: no-repeat;
+}
+
