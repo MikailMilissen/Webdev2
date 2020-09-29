@@ -1,0 +1,23 @@
+header{
+    box-sizing: border-box;
+}
+
+#Login{
+    text-align: center;
+}
+
+article{
+    text-align: center;
+}
+
+footer{
+    Text-align: center;
+}
+
+.form{
+    text-align: center;
+}
+
+#video{
+    margin-left: 50rem;
+}
