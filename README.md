@@ -1,12 +1,34 @@
 # This is webdev2 repo Mikail
 
+# WebDevClass September
 
+- HTML & CSS3
+- BOOTSTRAP 4
+- SAILS.JS
+- SASS
+- JAVASCRIPT
+- REACTJS
+- NODEJS
 
-1 - git init
-2 - create file README.md in your project folder.
-3 - git add . / git add * git add singlefile.html
-4 - git commit -m "ready"
-5 - git branch -M master
-6 - git remote add origin {your repository link}
-7 - git push -u origin master
+# Getting Started with Git
+* Download git tool: https://git-scm.com/downloads
 
+# Github first Config
+* git config --global user.name "githubUsername"
+* git config --global user.email "youremail@gmail.com"
+
+# Github Clone of Repository
+* git clone https://github.com/username/Repositoryname {example}
+
+# Github push project to repo
+* git init
+* git add *
+* git commit -m "commitMessage"
+* git branch -M master
+* git add remote origin https://github.com/username/YourRepository.git
+* git push -u origin master
+
+# Github Update of Repo
+* git add * (or single file which is updated)
+* git commit -m "commit Message"
+* git push -u origin master
