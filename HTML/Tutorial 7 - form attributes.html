@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tutorial 7 - form attributes.css">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+    wampserver
+    xampp -->
+    
+<!-- De eerste attribute in form zal verwijzen naar een php file om de data naar de server te sturen     -->
+<!-- De 2de attribute zegt dat we data moeten verzenden of ontvangen, in dit geval is het data ontvangen -->
+<!-- bij input 'required' zetten zorgt ervoor dat je verplicht bent om een input te geven-->
+
+<!-- POST is voor info te verzenden en GET is voor info te intvangen-->
+
+<fieldset>
+    <legend>User Login</legend>
+
+ <h1>REGISTRATION FORM</h1>
+    <form action="http://localhost/postdata.php" method="POST">
+        <label type="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" placeholder="enter First Name" autocomplete="on"><br><br>
+
+        <label type="lastname">Last name:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="enter Last Name" autocomplete="on"><br><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="enter username" autocomplete="on" required><br></br>
+
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" placeholder="enter email" autocomplete="on" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="enter password" autocomplete="off" required><br><br>
+
+        
+        <!-- <label for="confirmpassword">Confirm Password:</label>
+        <input type="password" id="password" name="password" placeholder="enter password" autocomplete="off"><br><br> -->
+
+            <select>
+                <option value="Brussel">Brussel</option>
+                <option value="Aalst">Aalst</option>
+            </select>
+            <select>
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+            </select><br><br>
+        <input type="submit" value="Submit this to the server">
+        <input type="hidden" name="process" value="1">
+        <!-- <input type="submit" value="send this data to server"> -->
+    </form>
+
+</fieldset>
+</body>
+</html>
