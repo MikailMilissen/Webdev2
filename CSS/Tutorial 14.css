@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    display: flex;
+}
+
+.child{
+    background-color: darkkhaki;
+    padding: 5rem;
+    margin: 1px;
+    width: 100%;
+}
+
+@media (max-width: 500px){
+    .mobile{
+        display: block;
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
