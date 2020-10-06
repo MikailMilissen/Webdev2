@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Myspecialfont";
+    src: url('sansation_light.woff');
+}
+
+h1,p{
+    font-family: Myspecialfont;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 2ch;
+    text-align: center;
+    text-shadow: 2px 5px 4px chartreuse;
+}
+
+p::first-letter{
+    font-weight: bold;
+    color: red;
+}
+
+p::first-line{
+    color: blue;
+}
+
+div {
+    width: 100%;
+    background-color: orange;
+    padding: 3%;
+    text-align: center;
+}
+div a{
+    text-decoration: none;
+    font-size: x-large;
+    color: white;
+}
+
+div a:hover{
+    color: black;
+}
+
+div a:visited{
+    color: darkblue;
+}
+
+div a:active{
+    color: crimson;
+}
