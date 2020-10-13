@@ -1,0 +1,18 @@
+.grid-container{
+    grid-auto-flow: column;
+    display: grid;
+}
+
+.grid-item{
+    padding: 3%;
+    background-color: bisque;
+    grid-auto-columns: auto auto auto;
+    margin: 1px;
+}
+
+@media (max-width:600px){
+    .grid-container{
+        display: grid;
+        grid-auto-flow: row;
+    }
+}

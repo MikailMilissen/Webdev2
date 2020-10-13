@@ -1,0 +1,14 @@
+#grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    /* Gekopieerd van Mozilla 'Grid Templates' */
+    grid-template: 
+    "b b a"
+    "b b c"
+    "b b c";
+}
+
+.product{
+    background: blueviolet;
+}
