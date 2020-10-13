@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.grid{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.grid-item{
+    padding: 3%;
+    background-color: blue;
+    margin: 1px;
+    text-align: center;
+}
+
+@media (max-width: 500px){
+    .grid{
+        grid-auto-flow: row;
+    }
+    
+}
