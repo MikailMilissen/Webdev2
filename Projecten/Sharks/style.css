@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Staatliches', cursive;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-rows: 1fr;
+    grid-area: 
+    "";
+    background: lightblue;
+    height: 50px;
+
+}
+
+.logo{
+    display: grid;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+
+.nav-list li{
+    list-style-type: none;
+}
+
+.haha{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav1{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav1 a {
+    text-decoration: none;
+    color:red
+}
+
+.nav1:hover{
+    font-size: 50px;
+}
+
+
+
