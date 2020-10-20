@@ -1,16 +1,18 @@
-*{
+body{
     margin: 0;
     padding: 0;
     font-family: 'Staatliches', cursive;
+    background-image: url(https://images7.alphacoders.com/893/893256.jpg);
+    background-size: cover;
 }
 
 .nav{
     display: grid;
-    grid-template-columns: 1fr 600px 1fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: 1fr;
     grid-area: 
     "";
-    background: lightblue;
+    background-color: rgba(0, 0, 0,.3);
     height: 50px;
 
 }
@@ -38,12 +40,28 @@
 
 .nav1 a {
     text-decoration: none;
-    color:red
+    color:white
 }
 
 .nav1:hover{
     font-size: 50px;
 }
+
+.main{
+    object-fit: cover;
+    height: 100vh;
+    color: white;
+
+}
+
+.search{
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+    width: 0;
+}
+
+    
 
 
 
