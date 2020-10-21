@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: darkgrey;
+    color: white;
+}
+aside{
+    background-color: lightgrey;
+
+
+}
+section{
+    background-color: whitesmoke;
+   
+
+}
+footer{
+    background-color: darkgray;
+}
+
+.flex-container{
+    display: flex;
+
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 800px){
+    .list{
+        flex-direction: column;
+    }
+}

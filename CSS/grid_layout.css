@@ -12,3 +12,9 @@
 .product{
     background: blueviolet;
 }
+
+@mediaquery ('maxwidth:500px'){
+    #grid{
+        grid-auto-flow
+    }
+}
