@@ -1,41 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding: 0;
     font-family: 'Staatliches', cursive;
+}
+    
+
+.hoofd{
     background-image: url(https://images7.alphacoders.com/893/893256.jpg);
     background-size: cover;
+    display: grid;
+    
 }
 
-.nav{
+.navigatie{
     display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-columns: 200px 1fr 200px;
     grid-template-rows: 1fr;
     grid-area: 
     "";
     background-color: rgba(0, 0, 0,.3);
     height: 50px;
+}
+
+.navigatie-lijst{
 
 }
 
 .logo{
-    display: grid;
+    display: flex;
     font-size: 30px;
     margin-left: 20px;
+    text-decoration: none;
+  
 }
 
-
-.nav-list li{
-    list-style-type: none;
+.logo a{
+    text-decoration: none;
+    color: white;
+    align-self: center;
 }
+
 
 .haha{
     display: flex;
     justify-content: space-between;
-}
-
-.nav1{
-    list-style-type: none;
-    text-decoration: none;
+  
+    
 }
 
 .nav1 a {
@@ -43,8 +59,8 @@ body{
     color:white
 }
 
-.nav1:hover{
-    font-size: 50px;
+.lijst:hover{
+    font-size: 20px;
 }
 
 .main{
@@ -54,12 +70,21 @@ body{
 
 }
 
-.search{
-    display: flex;
-    align-self: center;
-    margin: 0 auto;
-    width: 0;
+.activiteiten{
+    background-color: black;
+    height: 100vh;
 }
+
+.leden{
+    background: blue;
+    height: 100vh;
+}
+
+.contact{
+    background: grey;
+    height: 100vh;
+}
+
 
     
 
