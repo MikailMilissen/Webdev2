@@ -16,6 +16,12 @@ body{
     
 }
 
+.logo a{
+    text-decoration: none;
+    color: white;
+    align-self: center;
+}
+
 .navigatie{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -35,8 +41,13 @@ body{
 }
 
 .navigatie p a:hover{
+    top: 65%;
+    height: 2px !important;
+    width: 40%;
+    left: 30%;
+    transition: 0.4s ease-out all .1s;
+    text-decoration: underline ease-in .1s;
     color: red;
-    text-decoration: underline;
 }
 
 .logo{
@@ -47,11 +58,7 @@ body{
   
 }
 
-.logo a{
-    text-decoration: none;
-    color: white;
-    align-self: center;
-}
+
 
 .main{
     object-fit: cover;
