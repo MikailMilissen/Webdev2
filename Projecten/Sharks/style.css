@@ -1,12 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    box box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body{
-    margin: 0;
-    padding: 0;
     font-family: 'Staatliches', cursive;
 }
     
@@ -20,16 +18,25 @@ body{
 
 .navigatie{
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-area: 
-    "";
     background-color: rgba(0, 0, 0,.3);
     height: 50px;
 }
 
-.navigatie-lijst{
+.navigatie a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.navigatie p{
+    margin-top: 11px;
+    margin-left: 100px;
+}
 
+.navigatie p a:hover{
+    color: red;
+    text-decoration: underline;
 }
 
 .logo{
@@ -44,23 +51,6 @@ body{
     text-decoration: none;
     color: white;
     align-self: center;
-}
-
-
-.haha{
-    display: flex;
-    justify-content: space-between;
-  
-    
-}
-
-.nav1 a {
-    text-decoration: none;
-    color:white
-}
-
-.lijst:hover{
-    font-size: 20px;
 }
 
 .main{
@@ -86,7 +76,17 @@ body{
 }
 
 
-    
+/* @media (max-width:600px){
+    .navigatie{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-area: 
+    "";
+    background-color: rgba(0, 0, 0,.3);
+    height: 50px;
+    }
+} */
 
 
 
