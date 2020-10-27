@@ -7,13 +7,6 @@
 // in function
 
 
-// var 
-
-// function findBiggestNumber(){
-//     console.log(findBiggestNumber);
-//     return a+b;
-// }
-
 var num1 = 10;
 var num2 = 20;
 
@@ -25,5 +18,3 @@ function findBiggestNumber(){
 }
  
 console.log(findBiggestNumber()); 
-
-//return return (num1,num2) ? high:low;
