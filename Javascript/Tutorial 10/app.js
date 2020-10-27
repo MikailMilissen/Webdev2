@@ -56,3 +56,31 @@ function decrement(){
     count--;
     console.log(count);
 }
+
+
+// Exercise: If the number is at 10 -> stay at 10
+
+let tellen = 0
+
+function add(){ 
+    if(tellen < 10){
+    tellen++;
+    console.log(tellen)
+    }else
+        console.log(tellen);
+}
+// end of exercise
+
+
+function _user(){
+    console.log('hello user')
+}
+function admin (){
+    console.log('hello admin')
+}
+
+if ('admin' == 'admin'){
+    admin();
+}else{
+    _user;
+}
