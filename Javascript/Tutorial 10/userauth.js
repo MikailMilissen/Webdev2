@@ -1,3 +1,8 @@
+//selectors
+let usernameValue
+
+
+
 function getUser(username,password){
     let user_bool = (username == 'admin')? true:false;
     let pass_bool = (password == '12345')? true:false;
