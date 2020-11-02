@@ -12,17 +12,34 @@ console.log(isLoremInTheText,"lorem lorem find")
 var consoleResult = lorem.lastIndexOf('intecbrussel');
 consoleResult = lorem.search('voluptate')
 
-//extracting strings
+//extracting strings  -> go to w3 schools 'javascript Strings' => This is to give CSS like properties to strings
 console.log(lorem)
 consoleResult = lorem.slice(0,14);
 consoleResult = lorem.substring(0,2);
 consoleResult = lorem.replace('intecbrussel','Intec_Brussel') //replaces the one with the other
 console.log(consoleResult)
 
+consoleResult = lorem.replace("like","00000000") // find the first match and replaces it
+
+consoleResult = lorem.toUpperCase();
+    console.log(consoleResult)
+consoleResult = lorem.toLowerCase();
+    console.log(consoleResult)
+consoleResult = lorem.concat();
+
+consoleResult = lorem.trim();
+
+consoleResult = lorem.charAt(12);
+    console.log(consoleResult)
+
+consoleResult = lorem.sub(12);
+    console.log(consoleResult)
+
+
 
 // numbers
 
-let salary = new Number(103948487)
+let salary = new Number(103948487);
 console.log(salary)
 
 // Boolean
@@ -46,3 +63,27 @@ console.log(resultFirst)
 console.log(resultLast)
  
 console.log(result)
+
+// opdracht : Eventlistener + lowercase en uppercase
+    // When the mouses hovers over 'Javascript', make the font uppercase
+        // capital letters = toUppercase (when mouse over item)
+    // when mouse event, turn back to lower keys
+        // lower letters = toLowerCase (when mouse out item)
+
+
+
+
+//door joty
+function whenMouseOverIt(){
+        let caseUp = document.getElementById('heading').innerText;
+    var res = caseUp.toUpperCase();
+    document.getElementById('heading').innerHTML=res;
+}
+//door Atilla
+let title = document.getElementById('heading');
+function whenMouseOverIt(){
+    console.log(title.innerText.toUpperCase())
+}
+
+//alternatieve methode
+title.addEventListener('mouseover',whenMouseOverIt)
