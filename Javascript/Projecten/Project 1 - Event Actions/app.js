@@ -11,17 +11,15 @@ function addHeart(){
     // step 2: select main div container for comments section
     // step 3: print name and message in comment section with innerHtml property
 
+
+let name = document.getElementById('userName');
+let comment = document.getElementById('comment');
+
 const commentArea = document.getElementsByClassName('card-footer comments');
-const name = document.getElementById('name').innerHTML;
-const comment = document.getElementById('comment');
 
-let username = document.getelementbyid('username');
- 
-divContainer.innerHtml= username.value
-
-function pushComment(){
-    result = name.value;
-    console.log(result)
+function pushComment(name,comment){
+    let name = 
+    console.log(name)
 }
 
 /* innerHTML = `
@@ -31,3 +29,5 @@ function pushComment(){
 `
 
 */
+
+//userName.innerHtml= name.value;
