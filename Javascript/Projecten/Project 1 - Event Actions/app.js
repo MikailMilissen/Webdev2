@@ -12,15 +12,24 @@ function addHeart(){
     // step 3: print name and message in comment section with innerHtml property
 
 
-let name = document.getElementById('userName');
-let comment = document.getElementById('comment');
+// Capture the input values
+let comments = document.querySelector('.comments'); // for comments section
+let name = document.getElementById('name') //input value
+let message = document.getElementById('message') // input value
+let save = document.querySelector('.save') // button
 
-const commentArea = document.getElementsByClassName('card-footer comments');
+// comments
 
-function pushComment(name,comment){
-    let name = 
-    console.log(name)
-}
+save.addEventListener('click',()=>{
+    
+    //comments.append(commentModel(name.value,message.value))
+    comments.innerHTML += `<i class="fa fa-user" aria-hidden="true"></i> ${name.value}: 
+                <p class="card-text">${message.value}</p>`
+})
+
+// document.getElementById('name').innerText=`${_result.fullname}`
+
+
 
 /* innerHTML = `
 

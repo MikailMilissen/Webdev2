@@ -27,21 +27,21 @@
               <i class="fa fa-heart favorite" id="favorite" aria-hidden="true" onclick="addHeart()"> 0</i>
               <hr class="my-2">
               <i class="fa fa-comment" aria-hidden="true"></i>
-              <div class="card-footer comments">
+              <div class="card-footer comments" id="comments">
                 <!-- <i class="fa fa-user" aria-hidden="true"></i> Jack: 
                 <p class="card-text"> This is my comment.</p>
                  -->
               </div>
               <div class="card-footer">
-                  <div class="form-group" id='userName'>
+                  <div class="form-group" >
                     <label for="">name:</label>
                     <input type="text" class="form-control bg-dark" name="" id="name" aria-describedby="helpId" placeholder="">
                   </div>
-                  <div class="form-group" id='comment'>
+                  <div class="form-group">
                     <label for="">Your comment</label>
-                    <textarea class="form-control bg-dark text-white" name="" id="message" rows="3"></textarea>
+                    <textarea class="form-control bg-dark text-white" id='message' name="" rows="3"></textarea>
                   </div>
-                  <button type="button" class="btn btn-danger save" id="save" onclick="pushComment()">Save comment</button>
+                  <button type="button" class="btn btn-danger save" id="save" >Save comment</button>
               </div>
             </div>
           </div>
