@@ -1,3 +1,62 @@
+let favorite = document.getElementById('favorite');
+let comments = document.getElementById('comments');
+let inputName = document.getElementById('name');
+let inputMessage = document.getElementById('message');
+let save = document.getElementById('save');
+
+
+// Adding Hearts
+
+var count = 0;
+
+function addCount(){
+    count++;
+    return favorite.innerHTML = count;
+}
+
+favorite.addEventListener('click',addCount);
+
+// adding comments
+
+function addComment(){
+    comments.innerHTML += `<i class="fa fa-user" aria-hidden="true"></i> ${inputName.value}: 
+    <p class="card-text">${inputMessage.value}</p>`;
+}
+
+save.addEventListener('click',addComment)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 // Adding HeartCount
 var click = 0;
 

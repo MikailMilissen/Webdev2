@@ -112,6 +112,7 @@ students.forEach(forEachFunction)
 function forEachFunction(val,index){ // callback function
     // console.log("forEach method", index,":",val)
     // console.log(val.fullname)
+    
     return listofStudents.innerHTML += `<li>${val.fullname}</li>`
 }
 
