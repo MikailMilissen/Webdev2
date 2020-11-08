@@ -1,4 +1,4 @@
-// ARRAY METHODS
+// ARRAY METHODS ALSO CHECK OUT https://www.youtube.com/watch?v=0SyTDl4pb4w&t=5s
 
 let myNumberArray = [1,2,3,4,5,67,77,88,44,33,34,56,5,4,99];
 let myStringArray = ["Comedy","Horror","Action","Thriller","Sci-Fi","Fantasy"];
@@ -28,6 +28,16 @@ students.push(newStudent)
 method: join()
     The join() method also joins all array elements into a string.
 */
+// Split (",")  will make them into an array again after join
+
+// Concat() method will join 2 arrays into 1 array
+
+const myArrayA = ["A","B","C"]
+const myArrayB = ["D","E","F"]
+
+const newArray = myArrayA.concat(myArrayB)
+
+console.log(newArray)
 
 // console.log(myStringArray.join(" / "))
 
@@ -78,7 +88,7 @@ console.log(every_result)
 
 
 /*
-method: reduce()
+method: reduce() CHECK OUT https://www.youtube.com/watch?v=g1C40tDP0Bk
     The reduce() method reduces the array to a single value.
     accumulator
     currentValue
@@ -93,6 +103,23 @@ function reduceFunction(accumulator,currentValue,currentIndex){
 
 let reduceResult = myStringArray.reduce(reduceFunction)
 console.log("Reduce Result", reduceResult)
+
+// Other explanation of reduce via youtube video
+
+const numbers = [1,-1,2,3];
+
+// a = 0 ; c = 1 => a = 1  FOr the firt a: look at the 0 behind currentvalue
+// a = 1 : c = -1 => a = 0
+// a = 0 ; c = 2 => a = 2
+// a = 2 ; c = 3 => a = 5 (the result in the console) it counts from left to right
+
+const sum = numbers.reduce((accumulator,currentvalue) => {return accumulator + currentvalue},0); 
+// accumulator is where it starts, you can define the start by adding it begint currenValue or you don't have to define it 
+// and then it will take the first value in the array
+
+console.log(sum)
+
+
 
 // 1, 2, 3, 4, 5, 67, 77, 88, 44, 33, 34, 56, 5, 4, 99
 // 1+2+3+4+5+67+77+88+44+33+34+56+5+4+99 // reduce
