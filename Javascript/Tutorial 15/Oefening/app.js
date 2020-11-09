@@ -37,13 +37,15 @@ function guessNumber(){
     let _result = result.value
     if (_result == computerNumber){
         scaleIndicator.innerText = `${_result} is Correct!`
-    }else if (_result > computerNumber){    
-        scaleIndicator.innerText = `${_result} is too high!`
-    } else if (_result < computerNumber){
-        scaleIndicator.innerText = `${_result} is too low!`
+    }else if (computerNumber - _result < 10) {    
+        scaleIndicator.innerText = `${_result} is Hot!`
+    }else if (computerNumber - _result > 10 && computerNumber - _result < 20) {    
+        scaleIndicator.innerText = `${_result} is Warm!`
+    } else if (computerNumber - _result > 20){
+        scaleIndicator.innerText = `${_result} is Cold!`
     }
 }
- 
+
 buttonClick.addEventListener('click',guessNumber)
 
 /* Arne Solution

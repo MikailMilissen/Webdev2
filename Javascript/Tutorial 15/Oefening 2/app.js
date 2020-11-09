@@ -8,6 +8,12 @@ innerHTML property to update content of html tagname
 forEach > iterate an array and access properties of each object of array.
 */
 
+let userPeople = document.getElementById('users');
+let clickIt = document.getElementById('clickIt');
+// clickIt.addEventListener('click', forEachFunction);
+
+
+
 let users = {
     "data": [
         {
@@ -96,3 +102,15 @@ let users = {
     "limit": 10,
     "offset": 0
 }
+console.log(users.data[0]);
+
+
+console.log(users.data[1])
+
+
+function addPerson(){
+    user1 = users.data[1];
+    userPeople.innerHTML += `${user1}`
+}
+
+clickIt.addEventListener('click',addPerson)
