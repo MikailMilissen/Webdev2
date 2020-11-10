@@ -1,18 +1,6 @@
-/* NEW MISSION
-
-We need to iterate arraylist and print each object's properties in html page.
-
-What you need remember?
-
-innerHTML property to update content of html tagname
-forEach > iterate an array and access properties of each object of array.
-*/
-
-let userPeople = document.getElementById('users');
-let clickIt = document.getElementById('clickIt');
-// clickIt.addEventListener('click', forEachFunction);
-
-
+let title = document.getElementById('title')
+let userList = document.getElementById('users');
+let getUserBtn = document.getElementById('getusers')
 
 let users = {
     "data": [
@@ -95,22 +83,57 @@ let users = {
             "picture": "https://randomuser.me/api/portraits/men/80.jpg",
             "lastName": "Carlson",
             "title": "mr"
+        },
+        {
+            "id": "7DbXNPWlNDR4QYVvFZjr",
+            "email": "evan.carlson@example.com",
+            "firstName": "Evan",
+            "picture": "https://randomuser.me/api/portraits/men/80.jpg",
+            "lastName": "Carlson",
+            "title": "mr"
         }
     ],
     "total": 100,
     "page": 0,
     "limit": 10,
     "offset": 0
-}
-console.log(users.data[0]);
+};
 
+console.log(users)
 
-console.log(users.data[1])
-
-
-function addPerson(){
-    user1 = users.data[1];
-    userPeople.innerHTML += `${user1}`
+let student = {
+    scores: [1, 2, 3, 4, 5]
 }
 
-clickIt.addEventListener('click',addPerson)
+// let info = {
+//     name:"Atilla"
+// }
+
+// let title = document.getElementById('title')
+// title.innerHTML=info.name
+
+console.log(users.data)
+getUserBtn.addEventListener('click',function(){
+    console.log('onclick callback function')
+    function getUsers(user, index) {
+        console.log('get user function')
+        console.log(user, "single object") // printing obj
+        // title.innerHTML = `${user.title} ${user.firstName} ${user.lastName}`
+        userList.innerHTML += `
+        <div class="card">
+                        <img class="card-img-top" src="${user.picture}" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title" id="title">${user.title}. ${user.firstName} ${user.lastName}</h4>
+                            <p class="card-text">
+                              <strong>Email:</strong> ${user.email}<br/>
+                            </p>
+                        </div>
+                    </div>
+        `
+    
+    }
+    
+    users.data.forEach(getUsers)
+    
+    
+})
