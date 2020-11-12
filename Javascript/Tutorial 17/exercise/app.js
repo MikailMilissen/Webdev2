@@ -23,3 +23,15 @@ for (let i = 0; i <= 5; i++){
 for (let i = 5; i > 1; i--){
     if (i%2 !== 0) console.log(i) // reversal of above
 }
+
+function countdown(n){
+    if (n<1){
+      return [];
+    }else {
+      const countArray = countdown(n+1);
+      countArray.push(n);
+      return countArray;
+    }  
+  }
+
+console.log(countdown(5))
