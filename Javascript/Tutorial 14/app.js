@@ -1,3 +1,6 @@
+
+// Check youtube videom https://www.youtube.com/watch?v=R8rmfD9Y5-c
+
 let studentNames = ['Mikail','Elnura','Joty','Susan','Priya','Oguz']
 
 /*
