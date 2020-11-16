@@ -19,13 +19,14 @@ function calculation(){
     var result = eval(outputQuestion.innerHTML);
     console.log(result)
 }
-var _result = inputAnswer.value;
+var _result = parseInt(inputAnswer.value);
 
 function checkAnswer(){
     if(_result = eval(outputQuestion.innerHTML)){
         count = 0;
         count++;
-        return correctAnswer.innerHTML = count;
+        correctAnswer.innerHTML = count;
+        return outputQuestion.innerHTML = `${numberOne()} ${mathSign[randomSign()]} ${numberTwo()}`;
     }else{
         console.log('no')
     }
@@ -33,4 +34,4 @@ function checkAnswer(){
 document.getElementById('check').addEventListener('click',checkAnswer);
 
 console.log(eval(outputQuestion.innerHTML))
-console.log(parseInt(_result))
+console.log(_result)
