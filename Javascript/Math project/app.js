@@ -15,22 +15,34 @@ let numberOne = () => Math.round(Math.random()*100);
 let numberTwo = () => Math.round(Math.random()*100);
 outputQuestion.innerHTML = `${numberOne()} ${mathSign[randomSign()]} ${numberTwo()}`;
 
+// The solution from the random equation
+
 function calculation(){
     var result = eval(outputQuestion.innerHTML);
     console.log(result)
 }
+
+// Convert input string to number
+
 var _result = parseInt(inputAnswer.value);
+
+// Compare answer from random equation with the input from user
 
 function checkAnswer(){
     if(_result = eval(outputQuestion.innerHTML)){
-        count = 0;
-        count++;
-        correctAnswer.innerHTML = count;
+        posCount = 0;
+        posCount++;
+        correctAnswer.innerHTML = posCount;
         return outputQuestion.innerHTML = `${numberOne()} ${mathSign[randomSign()]} ${numberTwo()}`;
     }else{
-        console.log('no')
-    }
+        negCount = 0;
+        negCount++;
+        correctAnswer.innerHTML = negCount;
+        return outputQuestion.innerHTML = `${numberOne()} ${mathSign[randomSign()]} ${numberTwo()}`;}
 }
+
+// Button click to activate
+
 document.getElementById('check').addEventListener('click',checkAnswer);
 
 console.log(eval(outputQuestion.innerHTML))
