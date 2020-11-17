@@ -1,3 +1,6 @@
+// Mijn probeersel 
+/*
+
 var outputQuestion = document.getElementById('question')
 var inputAnswer = document.getElementById('answer')
 let correctAnswer = document.getElementById('correct')
@@ -11,8 +14,8 @@ function randomSign(){
 }
 //Randomize number 1 en 2
 
-let numberOne = () => Math.round(Math.random()*100);
-let numberTwo = () => Math.round(Math.random()*100);
+let numberOne = () => Math.round(Math.random()*100+1); 
+let numberTwo = () => Math.round(Math.random()*100+1);
 outputQuestion.innerHTML = `${numberOne()} ${mathSign[randomSign()]} ${numberTwo()}`;
 
 // The solution from the random equation
@@ -29,7 +32,7 @@ var _result = parseInt(inputAnswer.value);
 // Compare answer from random equation with the input from user
 
 function checkAnswer(){
-    if(_result = eval(outputQuestion.innerHTML)){
+    if(_result == eval(outputQuestion.innerText)){
         posCount = 0;
         posCount++;
         correctAnswer.innerHTML = posCount;
@@ -47,3 +50,5 @@ document.getElementById('check').addEventListener('click',checkAnswer);
 
 console.log(eval(outputQuestion.innerHTML))
 console.log(_result)
+
+*/

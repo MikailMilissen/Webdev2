@@ -46,7 +46,9 @@ nthChildsofTodos.forEach(function(item){
     item.setAttribute('class', 'list-group-item d-flex justify-content-between bg-warning')
 })
 
+function addEvent(event){
+    console.log(event);
+    console.log('test')
+}
 
-
-
-
+addTodoBtn.addEventListener('click', addEvent)
