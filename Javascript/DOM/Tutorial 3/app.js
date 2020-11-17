@@ -35,16 +35,18 @@ var div = createHTML('div')
 div.className="container"
 console.log(div)
 
-
-
-
-
 console.log(todoInput)
 console.log(Output)
 
-// Change the bg-color of the even to do lists
+// Exercise: Change the bg-color of the even to do lists
 
 var nthChildsofTodos = document.querySelectorAll('.list-group-item:nth-child(even)');
+console.log(nthChildsofTodos);
+nthChildsofTodos.forEach(function(item){
+    item.setAttribute('class', 'list-group-item d-flex justify-content-between bg-warning')
+})
+
+
 
 
 
