@@ -17,7 +17,6 @@ function storeKeys(){
    // console.log(inputKey)
    // console.log(inputValue)
 }
-
 buttonInsertData.addEventListener('click',storeKeys)
 
 // Get random storage data
@@ -27,8 +26,6 @@ let sessionData
 buttonShowStorage.addEventListener('click', function(e){
     //sessionData = []
     // let temp;
-
-   
     for ( let index = 0 ; index < sessionStorage.length ; index++){
         let key = sessionStorage.key(index);
         let value = sessionStorage.getItem(key);
@@ -40,7 +37,6 @@ buttonShowStorage.addEventListener('click', function(e){
 // Get data by Key
 
 buttonDataByKey.addEventListener('click', function(e){
-  
-        console.log(sessionStorage.key(1))
-    
+  for (let index = 0 ; index < sessionStorage.length ; index++)
+  console.log(sessionStorage.key(index))
 })
