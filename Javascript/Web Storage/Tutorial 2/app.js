@@ -2,7 +2,7 @@
 let inputKey = document.getElementById('inputKey')
 let inputValue = document.getElementById('inputValue')
 const buttonInsertData = document.getElementById('buttonInsert')
-
+const output = document.querySelector('.output')
 
 
 
@@ -21,17 +21,26 @@ function storeKeys(){
 buttonInsertData.addEventListener('click',storeKeys)
 
 // Get random storage data
-console.log(sessionStorage)
 
-//  buttonShowStorage.addEventListener('click', function)
+let sessionData
 
-// Get storage data by key
-// function searchByKey(){
-//     if (inputSearchKey === KeyName){
-//         console.log('ok')
-//     } else {
-//         console.log(KeyName)
-//     }
-// }
+buttonShowStorage.addEventListener('click', function(e){
+    //sessionData = []
+    // let temp;
 
-// buttonDataByKey.addEventListener('click', searchByKey)
+   
+    for ( let index = 0 ; index < sessionStorage.length ; index++){
+        let key = sessionStorage.key(index);
+        let value = sessionStorage.getItem(key);
+        output.innerHTML += `Hello ${key} with a value of ${value} </br>`;
+        console.log(key)
+    }
+})
+
+// Get data by Key
+
+buttonDataByKey.addEventListener('click', function(e){
+  
+        console.log(sessionStorage.key(1))
+    
+})
