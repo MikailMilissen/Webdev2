@@ -5,7 +5,6 @@ const buttonInsertData = document.getElementById('buttonInsert')
 const output = document.querySelector('.output')
 
 
-
 const buttonShowStorage = document.getElementById('getDataFromStorage')
 const buttonDataByKey = document.getElementById('getDataByKey')
 let inputSearchKey = document.getElementById('getValueFromStorage')
@@ -26,7 +25,7 @@ let sessionData
 buttonShowStorage.addEventListener('click', function(e){
     //sessionData = []
     // let temp;
-    for ( let index = 0 ; index < sessionStorage.length ; index++){
+    for (let index = 0 ; index < sessionStorage.length ; index++){
         let key = sessionStorage.key(index);
         let value = sessionStorage.getItem(key);
         output.innerHTML += `Hello ${key} with a value of ${value} </br>`;
@@ -35,7 +34,6 @@ buttonShowStorage.addEventListener('click', function(e){
 })
 
 // Get data by Key
-
 buttonDataByKey.addEventListener('click', function(e){
   for (let index = 0 ; index < sessionStorage.length ; index++)
   console.log(sessionStorage.key(index))
