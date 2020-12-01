@@ -9,8 +9,6 @@ let itemsArray = localStorage.getItem('todos', todoInput.value) ? JSON.parse(loc
 localStorage.setItem('todoInput', JSON.stringify(itemsArray));
 const data = JSON.parse(localStorage.getItem('todoInput'));
 
-
-
 function addTodoToArray(todo) {
 
     if (todoArray === null || todoArray === undefined) {
@@ -53,8 +51,6 @@ function addTodo(event) {
     todoDiv.appendChild(deleteBtn);
 
     todoList.appendChild(todoDiv);
-
-    
 }
 
 todoBtn.addEventListener('click', function (e) {
@@ -70,7 +66,6 @@ todoBtn.addEventListener('click', function (e) {
     addTodo(item);
   });
 
-
 clearAll.addEventListener('click', function (e) {
     localStorage.clear();
     console.log(todoList.firstElementChild)
@@ -78,11 +73,7 @@ clearAll.addEventListener('click', function (e) {
         todoList.removeChild(todoList.firstElementChild)
     }
 
-
 })
-
-
-
 
 function deleteCheck(e) {
     const item = e.target;
