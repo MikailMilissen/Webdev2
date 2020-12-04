@@ -43,6 +43,8 @@ function addTodo (event) {
     sessionStorage.setItem('to-Do-Item',JSON.stringify(todoData))
 }
 
+console.log(todoData)
+
 function deleteCheck(e){
     // console.log(e.target) //this show what you are clicking on
     var item = e.target;
@@ -59,5 +61,7 @@ function deleteCheck(e){
         const todo = item.parentElement;
         todo.classList.toggle('completed') // change the classlist to completed (check CSS)
     }
+    
 }
+
 
