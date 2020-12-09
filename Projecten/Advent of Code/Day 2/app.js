@@ -34,12 +34,17 @@ function validPassword(lowNumber,highNumber,Value,Password){
 
 var Arr = [6,8,'s','svsssszslpsp']
 
+var stringSearch = Arr[2]
+var stringLiteral = Arr[3]
 
 
 
-let numberOne = Passwords.firstValue
+String.prototype.count=function(c) { 
+  var result = 0;
+  for(i=0;i<this.length;i++)if(this[i]==c)result++;
+  return result;
+};
 
-function checkLength(){
-   
-}
-console.log(numberOne)
+console.log(Arr[3].count(Arr[2])); 
+
+console.log(stringLiteral.split('s'))
