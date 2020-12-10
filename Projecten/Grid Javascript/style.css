@@ -1,0 +1,53 @@
+body{
+    background-image: url('https://i.imgur.com/emSvYMy.gif');
+    background-size: cover;
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+.main{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100vh;
+    height: 100vh;
+
+}
+
+.project1{
+    height: 400px;
+    width: 400px;
+    background-color: green;
+}
+
+.project2{
+    height: 400px;
+    width: 400px;
+    background-color:blue;
+}
+
+.project3{
+    height: 400px;
+    width: 400px;
+    background-color:yellow;
+}
+
+.project4{
+    height: 400px;
+    width: 400px;
+    background-color: azure
+}
+
+.project5{
+    height: 400px;
+    width: 400px;
+    background-color: gray;
+}
+
+.project6{
+    height: 400px;
+    width: 400px;
+    background-color: honeydew;
+}
