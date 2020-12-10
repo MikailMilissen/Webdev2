@@ -32,12 +32,12 @@ function validPassword(lowNumber,highNumber,Value,Password){
 }
 */
 
+Data[0].split('-')[1]
+
 var Arr = [6,8,'s','svsssszslpsp']
 
 var stringSearch = Arr[2]
 var stringLiteral = Arr[3]
-
-
 
 String.prototype.count=function(c) { 
   var result = 0;
