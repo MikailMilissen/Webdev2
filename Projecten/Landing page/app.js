@@ -5,16 +5,17 @@ const greeting = document.querySelector('#greeting')
 const name = document.querySelector('.name')
 const focus = document.querySelector('.focus');
 
-let today = new Date();
-hour = today.getHours();
+
 
 function showTime(){
+    let today = new Date();
+    hour = today.getHours();
     minutes = today.getMinutes();
     seconds = today.getSeconds(); 
     // output Time
     time.innerHTML = `${hour}:${addZero(minutes)}:${addZero(seconds)}`;
     // Let time run every second
-    setTimeout(showTime, 500);
+    setTimeout(showTime, 1000);
     // Add a zero to minutes and seconds
 }
 
@@ -28,13 +29,13 @@ function addZero(n){
 
 function setGreeting(){
     if (hour<12){
-        document.body.style.backgroundImage = "url ('../Afbeeldingen/morning.jpg')"
+        document.body.style.backgroundImage = "url('./Afbeeldingen/morning.jpg')"
         greeting.textContent = 'Good Morning'
     } else if(hour<17){
-        document.body.style.background = "url ('../Afbeeldingen/midday.jpg')"
+        document.body.style.backgroundImage = "url('./Afbeeldingen/midday.jpg')"
         greeting.textContent = 'Good Afternoon'
     } else {
-        document.body.style.backgroundImage = "url ('../Afbeeldingen/evening.jpg')"
+        document.body.style.backgroundImage = "url('./Afbeeldingen/evening.jpg')"
         greeting.textContent = 'Good Evening'
     }
 }
