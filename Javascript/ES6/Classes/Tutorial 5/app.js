@@ -36,41 +36,24 @@ class GameBoy {
         this.height = height
         this.model = model
     }
-
     device(){
         console.log(`Weight => ${this.weight}\nHeight => ${this.height}\nColour => ${this.colour}\nModel => ${this.model}`)
     }
-
     volumeup(){
-
     }
-
     volumedown(){
-
     }
-
     poweron(){
-
     }
-
     poweroff(){
-
     }
-
     turnLeft(){
-
     }
-
     turnRight(){
-
     }
-
     backward(){
-
     }
-
     forward(){
-
     }
 
 }

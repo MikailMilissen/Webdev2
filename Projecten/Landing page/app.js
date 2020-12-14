@@ -5,8 +5,6 @@ const greeting = document.querySelector('#greeting')
 const name = document.querySelector('.name')
 const focus = document.querySelector('.focus');
 
-
-
 function showTime(){
     let today = new Date();
     hour = today.getHours();
