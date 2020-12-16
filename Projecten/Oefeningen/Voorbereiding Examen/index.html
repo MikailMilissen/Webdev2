@@ -11,7 +11,16 @@
   </head>
   <body>
       <h1 class="hello"></h1>
-      <p class="temp"></p>
+      <p class="temp">Click me</p>
+      <button class="btn btn-danger" onclick="saySomething()">OnClick</button>
+      <button class="btn btn-danger" onmouseover="saySomething()" >Mouseover</button>
+      <button class="btn btn-danger" onkeydown="saySomething()" onkeypress="saySomething()">keydown</button>
+   <p class="text"></p>
+   <button class="btn btn-primary" onclick="sortAlpha()">Sort Alphabetically</button>
+   <button class="btn btn-primary" onclick="sortReversed()">Sort reversed</button>
+   <p class="students"></p>
+
+     
     <script src="practice.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
