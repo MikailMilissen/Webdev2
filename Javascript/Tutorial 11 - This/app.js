@@ -31,8 +31,9 @@ let mikail = {
     }
 }
 // functie aanroepen
-mikail.getInfo()
+mikail.getInfo();
 
+student.getTodo();
 
 //opdracht
 // Stap 1: Initiate obkect

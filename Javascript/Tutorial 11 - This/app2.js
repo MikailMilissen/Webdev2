@@ -5,7 +5,7 @@ let hamburger = {
     extra:['bacon','kaas'],
 
     bestellen:function (){
-        console.log(`Kan ik een burger krijgen met ${this.saus[1]} ${this.broodje} en zonder ${this.extra} alstublieft.`)
+        console.log(`Kan ik een burger krijgen met ${this.saus[1]} ${this.broodje} en zonder ${this.extra[0]} alstublieft.`)
     }
 }
 
