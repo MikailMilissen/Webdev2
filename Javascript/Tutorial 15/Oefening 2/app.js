@@ -111,28 +111,3 @@ let student = {
 
 // let title = document.getElementById('title')
 // title.innerHTML=info.name
-
-console.log(users.data)
-getUserBtn.addEventListener('click',function(){
-// console.log('onclick callback function')
-    function getUsers(user, index) {
-        // console.log('get user function')
-        // console.log(user, "single object") // printing obj
-        // title.innerHTML = `${user.title} ${user.firstName} ${user.lastName}`
-        userList.innerHTML += `
-            <div class="card">
-                <img class="card-img-top" src="${user.picture}" alt="">
-                <div class="card-body">
-                    <h4 class="card-title" id="title">${user.title}. ${user.firstName} ${user.lastName}</h4>
-                    <p class="card-text">
-                        <strong>Email:</strong> ${user.email}<br/>
-                    </p>
-                </div>
-            </div>`
-
-    }
-    
-    users.data.forEach(getUsers)
-    
-    
-})
