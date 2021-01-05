@@ -1,0 +1,59 @@
+body {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.411);
+    margin: 3px;
+}
+
+#app {
+    background-color: rgba(0, 128, 0, 0.116);
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    border-width: .1 rem;
+    border-style: ridge;
+    border-width: .19vh;
+    border-color: rgba(128, 128, 128, 0.274);
+    border-radius: 99px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10vh;
+}  
+
+#div0, #div1{
+    display: flex;
+    flex-direction: column;
+}
+
+#person {
+    text-align: center;
+    max-width: 40vw;
+    min-width: 40vw;
+    padding:1rem;
+    margin: 1rem;
+    background-color: rgba(0, 128, 0, 0.267);
+    border-color: rgba(128, 128, 128, 0.15);
+    border-radius: 99px;
+    border-style: ridge;
+    border-width: .19vh;
+}
+
+#company {
+    text-align: center;
+    max-width: 40vw;
+    min-width: 40vw;
+    padding:1rem;
+    margin: 1rem;
+    background-color: rgba(45, 0, 128, 0.267);
+    border-color: rgba(128, 128, 128, 0.15);
+    border-radius: 99px;
+    border-style: ridge;
+    border-width: .19vh;
+}
+
+
+h1{
+    display: flex;
+    justify-content: space-around;  
+}
