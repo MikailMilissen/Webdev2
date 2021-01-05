@@ -1,16 +1,13 @@
-
-
 const apiUrl = "http://localhost:3000/users"
 const jumbotron = document.querySelector('.jumbotron')
 const usersbtn = document.querySelector('button')
 const userID = document.querySelector('#singleUser')
 
 async function getUsers(){
- let response = await fetch(apiUrl);
- let data = await response.json()
- console.log(data)
+ let response = await fetch(apiUrl); // get data from server
+ let data = await response.json() // translate data to json
+ console.log(data) 
 }
-
 
 async function singleUser(id) {
  let response = await fetch(`${apiUrl}/${id}`)
@@ -35,10 +32,6 @@ usersbtn.addEventListener('click', (e) => {
  </div>
  </div>`
  })
- 
 })
-
-
- 
 // // getUsers();
 // singleUser();
