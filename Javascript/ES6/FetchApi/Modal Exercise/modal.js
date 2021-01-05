@@ -2,13 +2,10 @@ const api = 'https://jsonplaceholder.typicode.com/posts'
 const text = document.querySelector('.text')
 
 
-function makeModal(){
-    response = fetch(api)
-    response.then(res=>res.json())
-    .then(data => data.forEach(element => {
-        console.log(element.title)
-        text.innerHTML += `${element.title}<br>`;
-    }))
+async function getData(){
+    let response = await fetch(api)
+    let data = await response.json()
+    console.log(data)
 }
 
-makeModal()
+getData().then()
