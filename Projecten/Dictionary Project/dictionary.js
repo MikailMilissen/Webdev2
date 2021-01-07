@@ -1,28 +1,32 @@
 // https://api.dictionaryapi.dev/api/v2/entries/en/
 
-const Api = 'https://api.dictionaryapi.dev/api/v2/entries/en/'
-const search = document.querySelector('#search')
-const button = document.querySelector('#button')
-const jumbotron = document.querySelector('#jumbotron')
+const Api = "https://api.dictionaryapi.dev/api/v2/entries/en/";
+const search = document.querySelector("#search");
+const button = document.querySelector("#button");
+const jumbotron = document.querySelector("#jumbotron");
 
 // let response = fetch(Api);
 // response.then(res=>console.log(res))
 // response.then(dic=>dic.json())
 // .then(data=>console.log(data))
 
-async function findWord(id){
-    let response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${id}`) 
-    console.log(response)
-    let data = await response.json();
-    console.log(data)
-    return data
-    // return JSON.stringify(data)
+async function findWord(id) {
+  let response = await fetch(
+    `https://api.dictionaryapi.dev/api/v2/entries/en/${id}`
+  );
+  console.log(response);
+  let data = await response.json();
+  console.log(data);
+  return data;
+  // return JSON.stringify(data)
 }
 
-button.addEventListener('click', (e) => {
-    e.preventDefault() // om te voorkomen dat het vastloopt
-    findWord(search.value).then(response=>{ // .then(Value = het resultaat van de functie daarvoor, .then(activeert gewoon de async functie))
-       response.forEach(e => {return jumbotron.innerHTML = `
+button.addEventListener("click", (e) => {
+  e.preventDefault(); // om te voorkomen dat het vastloopt
+  findWord(search.value).then((response) => {
+    // .then(Value = het resultaat van de functie daarvoor, .then(activeert gewoon de async functie))
+    response.forEach((e) => {
+      return (jumbotron.innerHTML = `
        <h3 class="word-text">${e.word}</h3>
                     <span class="pronunciation-text" style="color: #808080;">${e.phonetics[0].text}</span>
                     <div id="definitions-container">
@@ -39,7 +43,7 @@ A noun refers to a person, animal, place or thing.
                         </div>
                     </div>
                 </div>
-       `
-        })
-})
-})
+       `);
+    });
+  });
+});
