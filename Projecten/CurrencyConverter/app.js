@@ -1,0 +1,1 @@
+// https://api.exchangeratesapi.io/latest?base=EUR&symbol=USD
