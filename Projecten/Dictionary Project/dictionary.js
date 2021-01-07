@@ -22,7 +22,7 @@ button.addEventListener('click', (e) => {
     e.preventDefault()
     console.log('test')
     findWord(search.value).then(response=>{
-       response.forEach(e => console.log(e.word))
+       response.forEach(e => console.log(e))
         })
 })
 
