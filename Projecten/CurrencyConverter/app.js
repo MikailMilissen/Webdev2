@@ -11,7 +11,7 @@ const result = document.querySelector('#result')
 async function getData(){
     let result = await fetch('https://api.exchangeratesapi.io/latest?base=EUR&symbol=USD');
     let data = await result.json()
-    console.log(data)
+    // return data
     findCurrency(data)
 }
 // Insert Rates
@@ -36,8 +36,12 @@ const findCurrency = (data) => {
 
 async function convertRates(){
     await getData()
+    let result = await fetch(API)
+    let data = await result.json()
     let amountValue = currencyFrom.value;
+    console.log(data.rates.CAD)
     console.log(amountValue)
+    
 }
 
 convertRates()
