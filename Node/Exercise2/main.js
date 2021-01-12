@@ -14,8 +14,15 @@ Done.
 
 const {User} = require('./myModules/constructor')
 
-const Mikail = new User('Mikail',1)
-Mikail.printUser()
+const Bert = new User('Bert',123)
+Bert.introduce()
+
+const Mikail = new User('Mikail',456)
+Mikail.introduce()
+
+const Leo = new User('Leo',789)
+Leo.introduce()
+
 
 
 

@@ -4,12 +4,10 @@ class User {
     constructor(name,ID){
         this.name =  name;
         this.ID = ID
-        console.log(name,ID)
     }
-    printUser(){
+    introduce(){
         console.log(`Hi, My name is ${this.name} and my ID is ${this.ID}`)
     }
-
 }
 
 module.exports={User}
