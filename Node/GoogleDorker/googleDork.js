@@ -14,7 +14,7 @@ const fs = require('fs')
 
 let argv = require('yargs/yargs')(process.argv.slice(2))
 .usage(`
-──▄█▀█▄─────────██
+──▄█▀█▄─────────██cd
 ▄████████▄───▄▀█▄▄▄▄
 ██▀▼▼▼▼▼─▄▀──█▄▄
 █████▄▲▲▲─▄▄▄▀───▀▄
