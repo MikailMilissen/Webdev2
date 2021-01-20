@@ -6,4 +6,16 @@ const loginController = (req,res) =>{
     res.send('Login Section')
 }
 
-module.exports = {homePageController,loginController}
+const registerController =(req,res)=>{
+    // console.log(req.body)  /// this will send the JSON object we send from the other program
+    res.send('Register Section')
+}
+
+const apiController = (req,res)=>{
+    res.json({
+        id:24,
+        title:'worker'
+    })
+}
+
+module.exports = {homePageController,loginController,registerController,apiController}
