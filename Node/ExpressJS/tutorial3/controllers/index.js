@@ -18,4 +18,27 @@ const apiController = (req,res)=>{
     })
 }
 
-module.exports = {homePageController,loginController,registerController,apiController}
+const userController = (req,res)=>{
+    console.log('user works!')
+    console.log(req.body)
+    res.send('User Section!')    
+}
+
+const userControllerParams = (req,res)=>{
+    let userName = req.query.username //if you type in 'http://localhost:3003/userParams?username=Atilla' in insomnia, it will display 'Atilla'
+    console.log(userName)
+    res.send(`Welcome ${userName}`)
+}
+
+const singleUserController = (req,res)=>{
+    let userID = req.params.id
+    console.log(userID)
+    res.send('Single User Profile Section')
+}
+
+const postController = (req,res) =>{
+    console.log(req.params)
+    res.send('Post Section')
+}
+
+module.exports = {homePageController,loginController,registerController,apiController,userController,userControllerParams,singleUserController,postController}
