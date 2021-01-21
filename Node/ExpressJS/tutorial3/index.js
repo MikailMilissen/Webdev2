@@ -62,4 +62,4 @@ app.get('/userParams',userControllerParams)
 app.get('/userParams/:id',singleUserController)
 
 // Now we will try with RegExp
-app.get('/post-(.*)',postController) // Everything after post- will be returned
+app.get(/post-(.*)/,postController) // Everything after post- will be returned // Don't forget that you use / instead of ''
