@@ -1,0 +1,12 @@
+1 - create cluster (db)
+2 - user add to cluster (db)
+3 - network access 
+4- click connect and generate mongodb url 
+mongodb+srv://mikail:qwerty123@webdevsep.ctll5.mongodb.net/webdevsep?retryWrites=true&w=majority
+
+you can change your password later after we test it
+not account password . db user password ok?
+
+
+all is fine now.
+thank you Atilla! youre wel ;)
