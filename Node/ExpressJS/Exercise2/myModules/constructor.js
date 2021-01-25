@@ -1,4 +1,4 @@
-const divisionModule = require("../../Exercise/myModules/divisionModule");
+const divisionModule = require("../../../Exercise/myModules/divisionModule");
 
 class User {
     constructor(name,ID){
