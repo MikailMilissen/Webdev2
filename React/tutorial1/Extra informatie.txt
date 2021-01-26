@@ -1,0 +1,9 @@
+ReactJS
+
+1. npm install create-react-app -g
+2. create-react-app tutorial1
+3. Install extensions
+ES7 React/Redux/GraphQL/React-Native snippets
+4. npm install --save reactstrap (optional) of  npm install --save reactstrap react react-dom
+5. npm install --save bootstrap (optional)
+6. you can use 'npm start' to start the server like nodemon
