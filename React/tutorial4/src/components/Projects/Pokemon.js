@@ -29,7 +29,7 @@ export default function Pokemon() {
       <button >Press here</button>
        {items.map(item =>(
         <ul>
-           <li key={item.url} className='pokemons'>
+           <li key={item} className='pokemons'>
             <Link to={`${item.url}`}>
                {item.name}
             </Link>
