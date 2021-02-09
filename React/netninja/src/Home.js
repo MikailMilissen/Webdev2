@@ -1,4 +1,5 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
+import BlogList from './Bloglist'
 
 const Home = () => {
     
@@ -11,29 +12,45 @@ const Home = () => {
     // const clickMeAgain = (parameter,e) => {
     //     console.log('hello'+ parameter+ e)
     // }
-    
-    const [blogs,setBlogs] = useState([
-        {title: 'My new website', body: 'lorem ipsum...', author:'Mikail', id:1},
-        {title: 'Feestweekend', body: 'lorem ipsum...', author:'Daina', id:2},
-        {title: 'Web Dev Tips', body: 'lorem ipsum...', author:'Yannick', id:3}
-    ])
-   
 
+    const [name,setName] = useState('mario')
+    
+    const [blogs,setBlogs] = useState(null)
+    const [isPending,setIsPending] = useState(true)
+
+    
+
+    useEffect(() => {
+        console.log('use effect ran')
+        console.log(blogs)
+        console.log(name)
+        setTimeout(() => {
+            fetch('http://localhost:8000/blogs')
+            .then(res => {
+                return res.json()
+            })
+            .then((data) => {
+                console.log(data);
+                setBlogs(data)
+                setIsPending(false)
+            });
+        },1000)
+       
+
+    },[])
     return ( 
         <div className='Home'>
-            {blogs.map((blog) => 
-                <div className='blog-preview' key={blog.id}>
-                    <h2>{blog.title}</h2>
-                    <p>Written by { blog.author }</p>
-                </div>
-            )}
-            
-            
-            
-            {/* <button onClick={handleClick}>Click me</button>
-            <button onClick={(e) => clickMeAgain('Mario',e)}>Click me again</button>  */}
+        {isPending && <div>Loading...</div>}  
+        {blogs && <BlogList blogs={blogs} title='All blogs'  />}
+
+        {/* <BlogList blogs={blogs.filter((blog) => blog.author === 'Mikail' )} title='Mikail blogs'/>
+        <button onClick={() => setName('luigi')}>Change Name</button> */}
+
         </div>
-     );
-}
- 
-export default Home;homo gay
+    )}
+            
+            
+            
+    {/* <button onClick={handleClick}>Click me</button>
+    <button onClick={(e) => clickMeAgain('Mario',e)}>Click me again</button>  */}
+export default Home;

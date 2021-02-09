@@ -1,0 +1,23 @@
+{
+    "blogs":[
+        {
+            "title": "My new website", 
+            "body": "lorem ipsum...", 
+            "author": "Mikail", 
+            "id":1
+        },
+        {
+            "title": "My Sharks website", 
+            "body": "lorem ipsum...", 
+            "author": "Alex", 
+            "id":2
+        },
+        {
+            "title": "My horloge collectie", 
+            "body": "lorem ipsum...", 
+            "author": "Yasmine", 
+            "id":3
+        }
+        
+    ]
+}

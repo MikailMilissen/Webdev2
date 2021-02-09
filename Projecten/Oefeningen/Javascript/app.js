@@ -50,3 +50,8 @@ books.map(we => {
 })
 
 console.log(books)
+
+const addition = (a,b) => {
+    const result = a + b
+}
+

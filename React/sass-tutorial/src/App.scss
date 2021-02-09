@@ -1,0 +1,20 @@
+$bgColor: #946464;
+$logoSize: 30wv;
+
+
+.App {
+  background-color: $bgColor;
+  .App-header {
+    .App-logo{
+      width: $logoSize;
+    }
+  }
+}
+
+@for $j from 1 through 5{
+  .post-#{$j}{
+    font-size: 16px * $j;
+  }
+}
+
+

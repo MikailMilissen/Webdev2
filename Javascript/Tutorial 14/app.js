@@ -26,7 +26,7 @@ studentNames[1][2] = 25; //Assign a new value to an existing value
 studentNames[0][3] = "Atilla"; //Add a new string (the old way, now we use push())
 console.log(studentNames[0])
 console.log(studentNames[1][1])
-console.log(studentNames[1][2])
+console.log(studentNames[1][2]) 
 
 let students = ['Mikail','Elnura','Joty','Susan','Priya','Oguz'];
 
