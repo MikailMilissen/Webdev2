@@ -1,4 +1,5 @@
 import express from 'express';
+///zie uitleg
 
 let app = require('./server').default;
 

@@ -1,0 +1,2 @@
+- Eerst moet er de razzle app in global geinstalleerd worden (npm i create-razzle-app --global)
+- Dan kan er een razzle app opgestart worden net zoals react(create-razzle-app *insertNameHere)
