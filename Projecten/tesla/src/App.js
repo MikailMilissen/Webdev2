@@ -17,14 +17,14 @@ function App() {
         <div className="app__itemsContainer">
           <Item 
             title='Lowest Cost Solar Panels in America'
-            desc='Money)back Guarantee'
+            desc='Money back Guarantee'
             descLink=''
-            backgroundImg={SolarPanels}
-            leftBtnTxt='Order Now'
+            LBT='Order Now'
             leftBtnLink=''
-            rightBtnText='Learn More'
+            RBT='Learn More'
             rightBtnLink=''
             twoButtons='true'
+            backgroundImg={SolarPanels}
             first
           />
           <Item 
@@ -32,9 +32,9 @@ function App() {
             desc='$69.420'
             descLink=''
             backgroundImg={ModelS}
-            leftBtnTxt='Custom Order'
+            LBT='Custom Order'
             leftBtnLink=''
-            rightBtnText='Learn More'
+            RBT='Learn More'
             rightBtnLink=''
             twoButtons='true'
           />
@@ -43,9 +43,9 @@ function App() {
             desc='$69.420'
             descLink=''
             backgroundImg={Model3}
-            leftBtnTxt='Custom Order'
+            LBT='Custom Order'
             leftBtnLink=''
-            rightBtnText='Learn More'
+            RBT='Learn More'
             rightBtnLink=''
             twoButtons='true'
           />
@@ -54,9 +54,9 @@ function App() {
             desc='$69.420'
             descLink=''
             backgroundImg={ModelX}
-            leftBtnTxt='Custom Order'
+            LBT='Custom Order'
             leftBtnLink=''
-            rightBtnText='Learn More'
+            RBT='Learn More'
             rightBtnLink=''
             twoButtons='true'
           />
@@ -65,9 +65,9 @@ function App() {
             desc='$69.420'
             descLink=''
             backgroundImg={ModelY}
-            leftBtnTxt='Custom Order'
+            LBT='Custom Order'
             leftBtnLink=''
-            rightBtnText='Learn More'
+            RBT='Learn More'
             rightBtnLink=''
             twoButtons='true'
           />
@@ -76,9 +76,9 @@ function App() {
             desc='Solar Roof Costs Less than a new roof plus solar panels'
             descLink=''
             backgroundImg={SolarRoof}
-            leftBtnTxt='Order Now'
+            LBT='Order Now'
             leftBtnLink=''
-            rightBtnText='Learn More'
+            RBT='Learn More'
             rightBtnLink=''
             twoButtons='true'
           />
@@ -87,9 +87,9 @@ function App() {
             desc='$69.420'
             descLink=''
             backgroundImg={Accessories}
-            leftBtnTxt='Shop Now'
+            LBT='Shop Now'
             leftBtnLink=''
-            rightBtnText=''
+            RBT=''
             rightBtnLink=''
             twoButtons='false'
           />

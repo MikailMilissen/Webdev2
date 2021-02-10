@@ -4,7 +4,7 @@ import '../components/Item.css'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 
-const Item = ({ title, desc,descLink, backgroundImg,leftBtnTxt,leftBtnLink,rightBtnTxt, rightBtnLink, twoButtons, first}) => {
+const Item = ({ title, desc,descLink, backgroundImg, LBT ,leftBtnLink,RBT, rightBtnLink, twoButtons, first}) => {
     return (
         <div className='item' style={{
             backgroundImage: `url(${backgroundImg})`
@@ -18,9 +18,9 @@ const Item = ({ title, desc,descLink, backgroundImg,leftBtnTxt,leftBtnLink,right
                 </div>
                 <div className="item__lowerThird">
                     <div className="item__buttons">
-                        <Button imp='primary' text={leftBtnLink} link={leftBtnLink}/>
+                        <Button imp='primary' text={LBT} link={leftBtnLink}/>
                         {twoButtons && (
-                            <Button imp='secondary' text={rightBtnTxt} link={rightBtnLink} />
+                            <Button imp='secondary' text={RBT} link={rightBtnLink} />
                         )}
                     </div>
                     {first &&(

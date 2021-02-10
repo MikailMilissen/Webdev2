@@ -6,6 +6,7 @@
     background-size: cover;
     display: flex;
     justify-content: center;
+    scroll-snap-align: start;
 }
 
 .item__container{
@@ -43,6 +44,7 @@
 .item__expand{
     color: white;
     width: 100%;
-    margin-top: 3%;
+    margin-top: 70vh;
     justify-content: center;
+
 }
